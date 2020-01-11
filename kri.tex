@@ -1,0 +1,94 @@
+\documentclass[12pt,openany]{book}
+\usepackage{amsmath}
+\usepackage{tikz}
+\usepackage{multicol}
+\usepackage[ruled,vlined]{algorithm2e}
+\begin{document}
+	\title{mathematical typesetting}
+	\author{krishna}
+	\maketitle
+	\chapter{Equations}
+	\section{Inline mode}
+	Linear Equation:$x+y=0$ and $x^3,x^{32}$
+	\section{Displayed mode}
+	In physics,the mass energy equivalence is calculated using the equation 
+	\begin{equation}
+		E=MC^2
+	\end{equation}
+	\section{Alining equations}
+	\begin{align}
+		x+3y+7z&=8\\
+		5x+3z&=3 \nonumber\\
+		x+y+z&=1
+	\end{align}
+	\begin{align*}
+	x+3y+7z&=8\\
+	5x+3z&=3\\
+	x+y+z&=1
+	\end{align*}
+	\section{Fractions}
+	$\displaystyle\frac{x+3}{5}$ \\
+	$\displaystyle x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}$\\
+	\section{subscript and superscript}
+	$a_1$,$a_{12}$
+	\section{special character}
+	\%\ , \&\
+	\section{Matrices}
+	$$
+	\begin{matrix}
+	1 & 2 & 3\\
+	a & b & c\\
+	4 & 5 & 6
+	\end{matrix}
+	$$
+	$$
+	\begin{bmatrix}
+	1 & 2 & 3\\
+	a & b & c\\
+	4 & 5 & 6
+	\end{bmatrix}
+	$$
+	$$
+	\begin{pmatrix}
+	1 & 2 & 3\\
+	a & b & c\\
+	4 & 5 & 6
+	\end{pmatrix}
+	$$
+	$$
+	\begin{vmatrix}
+	1 & 2 & 3\\
+	a & b & c\\
+	4 & 5 & 6
+	\end{vmatrix}
+	$$
+	\section{draw}
+	\begin{tikzpicture}
+	\draw (0,0)--(5,0)
+	(0,2)--(0,-2);
+		  
+	\end{tikzpicture}
+	\vspace{3cm}
+	\begin{tikzpicture}
+	\draw (1,4)--(5,6)
+	(0,0)parabola(4,4);
+	
+	\end{tikzpicture}
+	\section{multiple columns}
+	\begin{multicols}{2}
+		my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.my name is krishna.	
+	\end{multicols}
+	\section{algorithm}
+	\begin{algorithm}
+		\SetAlgoLined
+		\caption{algorithm}
+		\KwResult{result }
+		initialization\;
+		\While{cond}{instruction\;
+			\eIf{c1}
+			{ins if\;}
+			{ins else\;}
+		}
+	\end{algorithm}
+	
+\end{document}
